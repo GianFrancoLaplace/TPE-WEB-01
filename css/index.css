@@ -115,6 +115,97 @@ footer ul li{
     text-decoration: underline;
 }
 
+/* FORM.HTML */
+h2{
+    text-align: center;
+    font-size: 32px;
+    /* background-image: url(/images/mh-trainer-2-1533576998.png) */
+}
+
+form {
+    /* Centrar el formulario en la página */
+    margin: 0 ;
+    width: 45vw;
+    /* Esquema del formulario */
+    padding: 1em;
+    border: 1px solid var(--secondary-color);
+    border-radius: 1em;
+}
+
+form li + li {
+    margin-top: 1em;
+}
+
+label {
+    /* Tamaño y alineación uniforme */
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+}
+
+form ul li{
+    list-style: none;
+}
+
+input,
+textarea {
+    /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+       Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+    font: 1em sans-serif;
+  
+    /* Tamaño uniforme del campo de texto */
+    width: 85%;
+    box-sizing: border-box;
+  
+    /* Hacer coincidir los bordes del campo del formulario */
+    border: 1px solid #999;
+}
+
+input:focus,textarea:focus {
+    /* Destacado adicional para elementos que tienen el cursor */
+    border-color: #000;
+}
+
+textarea {
+    /* Alinear los campos de texto multilínea con sus etiquetas */
+    vertical-align: top;
+    
+    /* Proporcionar espacio para escribir texto */
+    min-height: 5em;
+    max-height: 15em;
+    min-width: 85%;
+    max-width: 85%;
+}
+
+.button{
+    position: absolute;
+    top: 20pc
+}
+
+.section_form{
+    margin: 15px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_img-form{
+    margin: 0;
+    width: 45vw;
+    border: 1px solid var(--secondary-color) ;
+    border-radius: 1em;
+}
+
+.img-pullUp{
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 1em;
+}
+
+.prueba-img{
+    
+    max-width: 1500px;
+}
+
 /* RESPONSIVE */
 
 @media(max-width:950px) {
