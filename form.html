@@ -55,33 +55,31 @@
     </div>
     <h2 class="priColor">CONTACTO</h2>
     <section class="section_form">
-        <form action=# method="post">
+        <form action=# method="post" id="form">
             <!-- action: URL donde se envían los datos.method: define con qué metoo HTTP se envían  -->
             <ul>
                 <li>
                     <label for="name">Nombre:</label>
-                    <input type="text" placeholder="introduzca su nombre" value="Gian Franco Laplace Schwindt"name="User_name" id="input-nombre">
+                    <input type="text" placeholder="introduzca su nombre" value="Gian Franco Laplace Schwindt"name="user_name" id="input-name" required minlength="2">
                 </li>
                 <li>
                     <label for="mail">Correo:</label>
-                    <input placeholder="introduzca su mail" type="email" name="user_email" id="input-mail">
+                    <input placeholder="introduzca su email" type="email" name="user_email" id="input-email" required minlength="8">
                 </li>
                 <li>
                     <label for="subject">Asunto:</label>
-                    <input type="text" placeholder="introduzca el asunto" name="user_subject" id="input-asunto">
+                    <input type="text" placeholder="introduzca el asunto" name="user_subject" id="input-subject">
                 </li>
                 <li>
                     <label for="msg">Mensaje:</label>
-                    <textarea name="user_message" id="msg"></textarea>
+                    <textarea name="user_message" id="input-msg" required></textarea >
                 </li>
                 <li class="button">
-                    <button type="submit" id="button-form">Enviar</button>
+                    <button id="button-form">Enviar</button>
                 </li>
             </ul>
         </form>  
-        <!-- <div class="container_img-form">
-            <img class="img-pullUp" src="https://images.pexels.com/photos/1865131/pexels-photo-1865131.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Pull-ups">
-        </div> -->
+        
     </section>
     <footer class="footer priColor">
         <div class="footer_container_icon">
@@ -98,9 +96,10 @@
         </div>
         <div>
             <div class="footer_container_subtitle">
-                <h5>
+                <h5 class="footer_subtitle footer_subtitle-pri">
                     Lorem ipsum dolor sit amet.
-                <h6>
+                </h5>
+                <h6 class="footer_subtitle footer_subtitle-sec">
                     Lorem ipsum, dolor sit amet consectetur.
                 </h6>
             </div>
