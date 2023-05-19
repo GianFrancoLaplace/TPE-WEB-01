@@ -56,32 +56,46 @@
     <h2 class="priColor">CONTACTO</h2>
     <section class="section_form">
         <form action=# method="post" id="form">
-            <!-- action: URL donde se envían los datos.method: define con qué metoo HTTP se envían  -->
             <ul>
                 <li>
                     <label for="name">Nombre:</label>
-                    <input type="text" placeholder="introduzca su nombre" value="Gian Franco Laplace Schwindt"name="user_name" id="input-name" required minlength="2">
+                    <input type="text" placeholder="Nombre" value=""name="user_name" id="input-name" required minlength="2">
                 </li>
                 <li>
                     <label for="mail">Correo:</label>
-                    <input placeholder="introduzca su email" type="email" name="user_email" id="input-email" required minlength="8">
+                    <input placeholder="Email" type="email" name="user_email" id="input-email" required minlength="8">
                 </li>
                 <li>
                     <label for="subject">Asunto:</label>
-                    <input type="text" placeholder="introduzca el asunto" name="user_subject" id="input-subject">
+                    <input type="text" placeholder="Asunto" name="user_subject" id="input-subject">
                 </li>
                 <li>
                     <label for="msg">Mensaje:</label>
-                    <textarea name="user_message" id="input-msg" required></textarea >
+                    <textarea name="user_message" id="input-msg" required minlength="4"></textarea >
                 </li>
                 <li class="button">
                     <button id="button-form">Enviar</button>
                 </li>
             </ul>
+            <div class="container-checkbox-captcha">
+                <input type="checkbox" class="input-captcha">
+                <label for="" class="label-captcha"> No soy un robot </label>
+            </div>
+            <div class="container-captcha">
+                <div class="captcha-area">
+                    <div class="captcha-img">
+                        <img src="/images/captcha-bg.png" alt="Captch Background">
+                        <span class="captcha"></span>
+                    </div>
+                </div>
+                    <input type="text" placeholder="Introducir captcha" maxlength="6" spellcheck="false" required>
+                    <button class="btn check-btn">CHECK</button>
+                    <button class="btn reload-btn">RESET</button>
+            </div>
         </form>  
         
     </section>
-    <footer class="footer priColor">
+    <footer class="footer footer-form priColor">
         <div class="footer_container_icon">
             <a href="">
                 <span class="material-symbols-outlined">
@@ -91,16 +105,16 @@
         </div>
         <div class="footer_container_p-description">
             <p class="footer_p-description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem non hic, dolore totam ut rem accusantium culpa dolorum sit ducimus dolorem repudiandae cupiditate consequatur id magni nobis assumenda, vitae ratione!
+                En fit healthy, descubre laverdad de ejercioos, información nuticional y motivación para lograr tu mejor cambio físico.
             </p>
         </div>
         <div>
             <div class="footer_container_subtitle">
                 <h5 class="footer_subtitle footer_subtitle-pri">
-                    Lorem ipsum dolor sit amet.
+                    Hazte parte!
                 </h5>
                 <h6 class="footer_subtitle footer_subtitle-sec">
-                    Lorem ipsum, dolor sit amet consectetur.
+                    Compartamos esta pasión y crezcamos juntos
                 </h6>
             </div>
 
@@ -129,8 +143,6 @@
             </ul>
         </div>
     </footer>
-    <!-- <div class="box box-1"></div>
-    <div class="box box-2"></div> -->
     <script src="/js/scripts.js"></script>
 </body>
 </html>
